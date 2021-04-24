@@ -20,7 +20,7 @@ apikey.key)
     // Show API information 
     texto = texto + `
     <div class="media">
-      <img src="../img/coin.jpg" class="aling-self-center mr-3 alt="coin" width="170" height="110">
+      <img src="../img/coin.jpg" class="aling-self-center mr-3 alt="coin">
       <div class="media-body">
         <h5 class="mt-2">${api.data[i].name}</h5>
         <p>${api.data[i].symbol}</p>

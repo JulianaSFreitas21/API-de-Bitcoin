@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#coins{
+  width: 85vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.media{
+  width: 100%;
+}
+
+#coins .media img{
+  width: 170px;
+  height: 110px;
+}
