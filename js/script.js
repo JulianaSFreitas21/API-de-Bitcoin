@@ -6,7 +6,7 @@ var apikey = {
 // GET fetch Rquisition
 fetch('https://pro-api.coinmarketcap.com/v1/cryptocurrency/map?CMC_PRO_API_KEY=' +
 apikey.key)
-.then((response) => {
+.then((response) => { // treatting the error with response.ok (for error 200) and response.error (for error 400, 404 ...)
   if(!response.ok) throw new Error('Erro ao executara requisição, status' + response.status);
   return response.json();
 })
@@ -29,6 +29,7 @@ apikey.key)
     </div>
     `;
 
+    // will send the information to our HTML within an id="coin"
     document.getElementById("coins").innerHTML = texto;
   }
   
